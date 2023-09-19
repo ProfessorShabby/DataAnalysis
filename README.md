@@ -1,1 +1,16 @@
-# DataAnalysis
+# Detecting Credit Card Fraud
+
+Problem Statement
+Companies today are employing analytical techniques for the early detection of credit card frauds, a key factor in mitigating fraud damage. The most common type of credit card fraud does not involve the physical stealing of the card, but that of credit card credentials, which are then used for online purchases.
+
+Imagine that you have been hired as a Data Analyst to work in the Credit Card Division of a bank. And your first assignment is to join your team in using data analysis for the early detection and mitigation of credit card fraud.  
+
+In order to prescribe a way forward, that is, suggest what should be done in order for fraud to get detected early on, you need to understand what a fraudulent transaction looks like. And for that you need to start by looking at historical data. 
+
+Here is a sample data set that captures the credit card transaction details for a few users.
+
+![RT7W3bteTX2-1t27Xr19Tw_27ccfcd2e65b4752920e81fda1ae8c5d_DA_1-Image_DataSet_Reading](https://github.com/ProfessorShabby/DataAnalysis/assets/106133748/88265a19-d406-484e-b181-400aeff0e5f4)
+
+Here is a sample visualization that you would use to capture a trend hidden in the sample data set shared.
+
+![kumNKCbZSdqpjSgm2Ynaxw_0326b11a493e49e1b10bc7b2a1f5d7e2_DA_1-Q9-Chart](https://github.com/ProfessorShabby/DataAnalysis/assets/106133748/0cd463ae-df47-4e83-bea0-fcf1591b2853)
