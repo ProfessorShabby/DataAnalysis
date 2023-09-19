@@ -1,0 +1,20 @@
+#Detecting Credit Card Fraud
+
+Questions For Data Analysis
+1. List at least 5 (five) data points that are required for the analysis and detection of a credit card fraud.
+-> IP Address, Shipping Address, Transaction Date, Transaction Value, Unit Purchased
+
+2. Identify 3 (three) errors/issues that could impact the accuracy of your findings, based on a data table provided.
+-> i. Missing Transaction value in row 3 column 8  beside the cell value named "Home Décor".
+  ii. Missing IP Address in row 5 column 1 and in row 9 column 1. (Header row not included)
+  iii. Format of the Transaction date varies throughout in the column 6.
+
+3. Identify 2 (two) anomalies, or unexpected behaviors, that would lead you to believe the transaction may be suspect, based on a data table provided.
+-> i. In rows 4,5,6 a large amount of money was credited on the same day (i.e. 3rd of June 2020). Also, many units of the same product were purchased.
+   ii. In row 13 a high-value product was purchased from a different IP Address to a different shipping address.
+
+4. Briefly explain your key take-away from the provided data visualization chart. 
+->  An unexpected spike can be noticed in the transaction value from transaction 3 to 5 for the user John P which makes it more suspicious.
+
+5. Identify the type of analysis that you are performing when you are analyzing historical credit card data to understand what a fraudulent transaction looks like. 
+-> Descriptive Anlysis : This technique helps you gain an understanding of what happened, includes the identification of patterns and anomalies in data. Anomalies signify a variation in a pattern that seems uncharacteristic, or, out of the ordinary. Anomalies may occur for perfectly valid and genuine reasons, but they do warrant an evaluation because they can be a sign of fraudulent activity.  
