@@ -56,19 +56,45 @@ The xlsx files are at https://github.com/ProfessorShabby/DataAnalysis/blob/main/
 https://github.com/ProfessorShabby/DataAnalysis/blob/main/Cleaning%20and%20Preparing%20Data_2.xlsx.xlsx
 
 
-## Data Analysis Using SQL
+# Data Analysis Using SQL
 
-### Data Sets
+## Data Sets
     
-1. Socioeconomic Indicators in Chicago : https://data.cityofchicago.org/Health-Human-Services/Census-Data-Selected-socioeconomic-indicators-in-C/kn9c-c2s2
+**1. Socioeconomic Indicators in Chicago** : https://data.cityofchicago.org/Health-Human-Services/Census-Data-Selected-socioeconomic-indicators-in-C/kn9c-c2s2
 This dataset contains a selection of six socioeconomic indicators of public health significance and a “hardship index,” for each Chicago community area, for the years 2008 – 2012.
 
-2. Chicago Public Schools : https://data.cityofchicago.org/Education/Chicago-Public-Schools-Progress-Report-Cards-2011-/9xs2-f89t
+**2. Chicago Public Schools** : https://data.cityofchicago.org/Education/Chicago-Public-Schools-Progress-Report-Cards-2011-/9xs2-f89t
 This dataset shows all school level performance data used to create CPS School Report Cards for the 2011-2012 school year. This dataset is provided by the city of Chicago's Data Portal.
  
-3. Chicago Crime Data : https://data.cityofchicago.org/Public-Safety/Crimes-2001-to-present/ijzp-q8t2
+**3. Chicago Crime Data** : https://data.cityofchicago.org/Public-Safety/Crimes-2001-to-present/ijzp-q8t2
 This dataset reflects reported incidents of crime (with the exception of murders where data exists for each victim) that occurred in the City of Chicago from 2001 to present, minus the most recent seven days.
     
+# Data Analysis Using Python
 
+## House Sales in King County, USA
+This dataset contains house sale prices for King County, which includes Seattle. It includes homes sold between May 2014 and May 2015.
+
+**Variable**	    **Description**
+    id              A notation for a house
+    date	        Date house was sold
+    price	        Price is prediction target
+    bedrooms	    Number of bedrooms
+    bathrooms	    Number of bathrooms
+    sqft_living	    Square footage of the home
+    sqft_lot	    Square footage of the lot
+    floors	        Total floors (levels) in house
+    waterfront	    House which has a view to a waterfront
+    view	        Has been viewed
+    condition	    How good the condition is overall
+    grade	        overall grade given to the housing unit, based on King County grading system
+    sqft_above	    Square footage of house apart from basement
+    sqft_basement	Square footage of the basement
+    yr_built	    Built Year
+    yr_renovated	Year when house was renovated
+    zipcode	        Zip code
+    lat	            Latitude coordinate
+    long	        Longitude coordinate
+    sqft_living15	Living room area in 2015(implies-- some renovations) This might or might not have affected the lotsize area
+    sqft_lot15	    LotSize area in 2015(implies-- some renovations)
 
 
