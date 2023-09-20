@@ -116,8 +116,7 @@ RidgeModel.fit(x_train,y_train)
 r_squared = RidgeModel.score(x_test, y_test)
 print(r_squared)
 
-# Perform a second order polynomial transform on both the training data and testing data. Create and fit a Ridge regression object using the training data, set the regularisation parameter to 0.1, and calculate the R^2 utilising the test data provided.
-pr=PolynomialFeatures(degree=2)
+# Perform a second order polynomial transform on both the training data and testing data. 
 pr_Traindata =pr.fit_transform(x_train)
 pr_Testdata =pr.fit_transform(x_test)
 
