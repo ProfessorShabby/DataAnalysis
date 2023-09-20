@@ -26,12 +26,19 @@ The dataset used in this lab comes from the following source: https://data.montg
 ### Tasks to perform:
 
 **Save** the CSV file as an XLSX file: Change the ‘Viewing’ in the ToolTip to ‘Editing’inorder to save the file as an XLSX file. The file is converted when you click ‘Convert’ in the prompt.
+
 **Column widths:** Sort out the widths of all columns so that the data is clearly visible in all cells. 
+
 **Empty rows:** Use the Filter feature to look for blanks and remove all empty rows from the data.
+
 **Duplicate records:** Use either the Conditional Formatting or Remove Duplicates feature to look for and remove any duplicated records from the data.
+
 **Spelling:** The original source file data has not been checked for errors in the spelling. Check for spelling mistakes in the data and fix them. 
+
 **Whitespace:** Use the Find and Replace feature to remove all double-spaces from the data.
+
 **Department names:** When the data was converted from its data source, the department names (see correct list below) didn’t import correctly and they are now split over two columns in the data. Use Flash Fill to reduce the department names to just one column, and then remove any unnecessary columns.
+
 
     | Department | Department |
     | ------ | ------ |
@@ -43,8 +50,25 @@ The dataset used in this lab comes from the following source: https://data.montg
     | Correction and Rehabilitation | Health and Human Services |
     | County Executives Office |  |       
 
-    The xlsx files are at https://github.com/ProfessorShabby/DataAnalysis/blob/main/Cleaning%20and%20Preparing%20Data_1.XLSX.xlsx and 
-    https://github.com/ProfessorShabby/DataAnalysis/blob/main/Cleaning%20and%20Preparing%20Data_2.xlsx.xlsx
+
+
+The xlsx files are at https://github.com/ProfessorShabby/DataAnalysis/blob/main/Cleaning%20and%20Preparing%20Data_1.XLSX.xlsx and 
+https://github.com/ProfessorShabby/DataAnalysis/blob/main/Cleaning%20and%20Preparing%20Data_2.xlsx.xlsx
+
+
+## Data Analysis Using SQL
+
+### Data Sets
+    
+1. Socioeconomic Indicators in Chicago : https://data.cityofchicago.org/Health-Human-Services/Census-Data-Selected-socioeconomic-indicators-in-C/kn9c-c2s2
+This dataset contains a selection of six socioeconomic indicators of public health significance and a “hardship index,” for each Chicago community area, for the years 2008 – 2012.
+
+2. Chicago Public Schools : https://data.cityofchicago.org/Education/Chicago-Public-Schools-Progress-Report-Cards-2011-/9xs2-f89t
+This dataset shows all school level performance data used to create CPS School Report Cards for the 2011-2012 school year. This dataset is provided by the city of Chicago's Data Portal.
+ 
+3. Chicago Crime Data : https://data.cityofchicago.org/Public-Safety/Crimes-2001-to-present/ijzp-q8t2
+This dataset reflects reported incidents of crime (with the exception of murders where data exists for each victim) that occurred in the City of Chicago from 2001 to present, minus the most recent seven days.
+    
 
 
 
