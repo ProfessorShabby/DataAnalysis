@@ -40,7 +40,7 @@ The dataset used in this lab comes from the following source: https://data.montg
 **Department names:** When the data was converted from its data source, the department names (see correct list below) didn’t import correctly and they are now split over two columns in the data. Use Flash Fill to reduce the department names to just one column, and then remove any unnecessary columns.
 
 
-    | Department | Department |
+    | **Department** | **Department** |
     | ------ | ------ |
     | Board of Elections | Economic Development |
     | Circuit Court | Environmental Protection |
@@ -72,29 +72,8 @@ This dataset reflects reported incidents of crime (with the exception of murders
 # Data Analysis Using Python
 
 ## House Sales in King County, USA
-This dataset contains house sale prices for King County, which includes Seattle. It includes homes sold between May 2014 and May 2015.
+This dataset contains house sale prices for King County, which includes Seattle. It includes homes sold between May 2014 and May 2015 :
+https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-DA0101EN-SkillsNetwork/labs/FinalModule_Coursera/data/kc_house_data_NaN.csv
 
-**Variable**	    **Description**
-    id              A notation for a house
-    date	        Date house was sold
-    price	        Price is prediction target
-    bedrooms	    Number of bedrooms
-    bathrooms	    Number of bathrooms
-    sqft_living	    Square footage of the home
-    sqft_lot	    Square footage of the lot
-    floors	        Total floors (levels) in house
-    waterfront	    House which has a view to a waterfront
-    view	        Has been viewed
-    condition	    How good the condition is overall
-    grade	        overall grade given to the housing unit, based on King County grading system
-    sqft_above	    Square footage of house apart from basement
-    sqft_basement	Square footage of the basement
-    yr_built	    Built Year
-    yr_renovated	Year when house was renovated
-    zipcode	        Zip code
-    lat	            Latitude coordinate
-    long	        Longitude coordinate
-    sqft_living15	Living room area in 2015(implies-- some renovations) This might or might not have affected the lotsize area
-    sqft_lot15	    LotSize area in 2015(implies-- some renovations)
 
 
