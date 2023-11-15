@@ -1,5 +1,4 @@
-## Data Analysis Using SQL
-
+## Python Project for Data Science
 # Required Packages
 import yfinance as yf
 import pandas as pd
@@ -9,17 +8,54 @@ import plotly.graph_objects as go
 from plotly.subplots import make_subplots
 
 # Using the yfinance Library to Extract Stock Data
- ## Using the Ticker module we can create an object that will allow us to access functions to extract data. To do this we need to provide the ticker symbol for the stock, here the company is Apple and the ticker symbol is AAPL
-   apple = yf.Ticker("AAPL")
+ ## Using the Ticker function enter the ticker symbol of the stock we want to extract data on to create a ticker object. The stock is Tesla and its ticker symbol is TSLA
+   Tesla = yf.Ticker("TSLA")
    !wget https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-PY0220EN-SkillsNetwork/data/apple.json
 
- ## Using the attribute info we can extract information about the stock as a Python dictionary.
-    import json
-with open('apple.json') as json_file:
-    apple_info = json.load(json_file)
-apple_info
+ ## Using the ticker object and the function `history` extract stock information and save it in a dataframe named `tesla_data`. Set the `period` parameter to `max` so we get information for the maximum amount of time.
+    Tesla_data = Tesla.history(period="max")
 
- ## A share is the single smallest part of a company's stock that you can buy, the prices of these shares fluctuate over time. Using the history() method we can get the share price of the stock over a certain period of time. Using the period parameter we can set how far back from the present to get data. The options for period are 1 day (1d), 5d, 1 month (1mo) , 3mo, 6mo, 1 year (1y), 2y, 5y, 10y, ytd, and max.
+## Reset the index using the reset_index(inplace=True) function on the tesla_data DataFrame and display the first five rows of the tesla_data dataframe using the head function
+   Tesla_data.reset_index(inplace=True)
+   Tesla_data.head()
+
+# Use Webscraping to Extract Tesla Revenue Data
+ ## Use the requests library to download the webpage https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-PY0220EN-SkillsNetwork/labs/project/revenue.htm Save the text of the response     
+    url = "https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-PY0220EN-SkillsNetwork/labs/project/revenue.htm"
+    data = requests.get(url).text
+    from bs4 import BeautifulSoup # this module helps in web scrapping.
+    import requests
+    Tesla_data = pd.read_html(url, flavor='bs4')
+    tesla_rev = Tesla_data[1]
+    tesla_rev
+
+    tesla_revenue = tesla_rev.rename(columns={'Tesla Quarterly Revenue(Millions of US $)': 'Date', 'Tesla Quarterly Revenue(Millions of US $).1': 'Revenue'})
+    tesla_revenue
+
+# Use yfinance to Extract Stock Data
+  ## Using the Ticker function enter the ticker symbol of the stock we want to extract data on to create a ticker object. The stock is GameStop and its ticker symbol is GME.
+    GameStop = yf.Ticker("GME")
+    gme_data = GameStop.history(period="max")
+    gme_data.reset_index(inplace=True)
+    gme_data.head()
+
+# Use Webscraping to Extract GME Revenue Data
+ ##  Use the requests library to download the webpage https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-PY0220EN-SkillsNetwork/labs/project/stock.html. Save the text of the response as a variable named html_data.
+    url4 = 'https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-PY0220EN-SkillsNetwork/labs/project/stock.html'
+    data4 = requests.get(url4).text
+    soup = BeautifulSoup(data4, "html5lib")
+    print(soup.prettify())
+
+
+    from bs4 import BeautifulSoup # this module helps in web scrapping.
+    import requests
+    gme_data = pd.read_html(url4, flavor='bs4')
+    gme_temp = gme_data[1]
+    gme_temp
+
+
+
+ 
 
 
  
